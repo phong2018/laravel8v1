@@ -1,4 +1,7 @@
 {
+    "/packages/js/vue/SocketIO/publicsocketio.js": "/packages/js/vue/SocketIO/publicsocketio.js",
+    "/packages/js/vue/SocketIO/privatesocketio.js": "/packages/js/vue/SocketIO/privatesocketio.js",
+    "/packages/js/vue/SocketIO/presencesocketio.js": "/packages/js/vue/SocketIO/presencesocketio.js",
     "/js/app.js": "/js/app.js",
     "/css/app.css": "/css/app.css"
 }

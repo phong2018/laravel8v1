@@ -1,0 +1,41 @@
+{
+    "name": "phonglg/laravelechoserver",
+    "description": "",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Author Name",
+            "email": "author@email.com",
+            "homepage": "http://author.com"
+        }
+    ],
+    "homepage": "https://github.com/phonglg/laravelechoserver",
+    "keywords": ["Laravel", "LaravelEchoServer"],
+    "require": {
+        "illuminate/support": "~7|~8"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~9.0",
+        "orchestra/testbench": "~5|~6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phonglg\\LaravelEchoServer\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phonglg\\LaravelEchoServer\\Tests\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Phonglg\\LaravelEchoServer\\LaravelEchoServerServiceProvider"
+            ],
+            "aliases": {
+                "LaravelEchoServer": "Phonglg\\LaravelEchoServer\\Facades\\LaravelEchoServer"
+            }
+        }
+    }
+}

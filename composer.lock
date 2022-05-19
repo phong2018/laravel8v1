@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "a6f4a8424586fa680aa64e8294074456",
+    "content-hash": "4f5a43ebfe2f73f537ac9826e05fb0d9",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1255,6 +1255,74 @@
             "time": "2022-05-16T17:09:47+00:00"
         },
         {
+            "name": "laravel/telescope",
+            "version": "v4.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/telescope.git",
+                "reference": "d0cf8d6a54a1831dbe189a1f194e8271a4a5435a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/telescope/zipball/d0cf8d6a54a1831dbe189a1f194e8271a4a5435a",
+                "reference": "d0cf8d6a54a1831dbe189a1f194e8271a4a5435a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "laravel/framework": "^8.37|^9.0",
+                "php": "^7.3|^8.0",
+                "symfony/var-dumper": "^5.0|^6.0"
+            },
+            "require-dev": {
+                "ext-gd": "*",
+                "guzzlehttp/guzzle": "^6.0|^7.0",
+                "orchestra/testbench": "^6.0|^7.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "4.x-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Telescope\\TelescopeServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Telescope\\": "src/",
+                    "Laravel\\Telescope\\Database\\Factories\\": "database/factories/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                },
+                {
+                    "name": "Mohamed Said",
+                    "email": "mohamed@laravel.com"
+                }
+            ],
+            "description": "An elegant debug assistant for the Laravel framework.",
+            "keywords": [
+                "debugging",
+                "laravel",
+                "monitoring"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/telescope/issues",
+                "source": "https://github.com/laravel/telescope/tree/v4.9.0"
+            },
+            "time": "2022-04-19T15:48:51+00:00"
+        },
+        {
             "name": "laravel/tinker",
             "version": "v2.7.2",
             "source": {
@@ -2128,6 +2196,59 @@
                 "source": "https://github.com/opis/closure/tree/3.6.3"
             },
             "time": "2022-01-27T09:35:39+00:00"
+        },
+        {
+            "name": "phonglg/laravelechoserver",
+            "version": "dev-main",
+            "dist": {
+                "type": "path",
+                "url": "./packages/Phonglg/LaravelEchoServer",
+                "reference": "a99b4d0067083733b3daae0136eb4a33efc580a1"
+            },
+            "require": {
+                "illuminate/support": "~7|~8"
+            },
+            "require-dev": {
+                "orchestra/testbench": "~5|~6",
+                "phpunit/phpunit": "~9.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Phonglg\\LaravelEchoServer\\LaravelEchoServerServiceProvider"
+                    ],
+                    "aliases": {
+                        "LaravelEchoServer": "Phonglg\\LaravelEchoServer\\Facades\\LaravelEchoServer"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Phonglg\\LaravelEchoServer\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "Phonglg\\LaravelEchoServer\\Tests\\": "tests"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Author Name",
+                    "email": "author@email.com",
+                    "homepage": "http://author.com"
+                }
+            ],
+            "homepage": "https://github.com/phonglg/laravelechoserver",
+            "keywords": [
+                "Laravel",
+                "LaravelEchoServer"
+            ],
+            "transport-options": {
+                "symlink": true,
+                "relative": true
+            }
         },
         {
             "name": "phpoption/phpoption",
@@ -7955,7 +8076,9 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": [],
+    "stability-flags": {
+        "phonglg/laravelechoserver": 20
+    },
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {

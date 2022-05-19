@@ -11,6 +11,11 @@ const mix = require('laravel-mix');
  |
  */
 
+mix.js("resources/packages/js/vue/SocketIO/publicsocketio.js", "public/packages/js/vue/SocketIO/")
+.js("resources/packages/js/vue/SocketIO/privatesocketio.js", "public/packages/js/vue/SocketIO/")
+.js("resources/packages/js/vue/SocketIO/presencesocketio.js", "public/packages/js/vue/SocketIO/")
+.vue();
+
 mix.js('resources/js/app.js', 'public/js').postCss('resources/css/app.css', 'public/css', [
     require('postcss-import'),
     require('tailwindcss'),
