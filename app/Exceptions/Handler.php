@@ -34,6 +34,11 @@ class Handler extends ExceptionHandler
      */
     public function register()
     {
+        $this->renderable(function (\Tymon\JWTAuth\Exceptions\TokenInvalidException $e, $request) {
+            return response()->json(['error'=>'Token error']);
+        }); 
+
+        
         $this->reportable(function (Throwable $e) {
             //
         });
