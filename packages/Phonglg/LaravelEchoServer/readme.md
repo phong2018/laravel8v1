@@ -9,6 +9,9 @@
 - /laravel8/config/app.php:174: add using BroadcastServiceProvider
 - laravel8/config/database.php:126: comment prefix
 - laravel8/packages/Phonglg/LaravelEchoServer/src/LaravelEchoServerServiceProvider.php: in boot() add:  Broadcast::routes(['middleware' => ['web', 'auth']]);
+- .env
+BROADCAST_DRIVER=redis 
+QUEUE_CONNECTION=redis
 
 # error: connect ECONNREFUSED 127.0.0.1:80
 # #################################
